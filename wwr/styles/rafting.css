@@ -131,13 +131,24 @@ section h2 {
   margin-bottom: 1rem;
 }
 
-section img {
-  width: 100px;
+.adventure-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 16px;
+  padding-top: 1rem;
+}
+
+.adventure-gallery figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100px;
+}
+
+.adventure-gallery img {
+  width: 80%;
   height: auto;
-  margin-right: 8px;
-  margin-bottom: 8px;
-  border-radius: 4px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 
