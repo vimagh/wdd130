@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 130 | HTML FORM - User Poll</title>
+</head>
+<body>
+    <header>
+        <h1>WDD 130 | Vimagh Solomon | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <Form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname">
+                <label for=" useremail">Email:</label>
+                <input type=" email" id="useremail" name=" useremail">
+                <!--form elements will go here-->
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <legend for= "browser">What is yor favourite internet browser?</legend>
+                <select id="browser" name="browser">
+                    <option value="chrome">Chrome</option>
+                    <option value="firefox">Firefox</option>
+                    <option value="safari">Safari</option>
+                    <option value="edge">Edge</option>
+                    <option value="brave">Brave</option>
+                    <option value="other">Other</option>
+
+                </select>
+                <legend for="pet">Do you have a household pet?</legend>
+                <input type="checkbox" id="pet" name="pet">
+                <legend for="feedback">List the places you have lived:</legend>
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Jos Nigeria, Abuja Nigeria, Kaduna Nigeria"></textarea>
+                <!--form elemens will go here-->
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </Form>
+
+    </main>
+    <footer>
+        <p>© 2025 | HTML Form - User Poll Activity | Your Name</p>
+    </footer>
+    
+</body>
+</html>

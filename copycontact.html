@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Whitewater Rafting Company">
+  <meta name="author" content="Vimagh Solomon">
+  <title>Contact Us - Whitewater Rafting</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+  <header>
+    <img src="images/white_waate_logo.jpg" alt="Whitewater Rafting Logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html" aria-current="page">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Us</h1>
+
+    <section class="company-info">
+      <h2>Company Information</h2>
+      <p><strong>Address:</strong> 666 Maitama Way, Abuja</p>
+      <p><strong>Phone:</strong> +23407065979282</p>
+      <p><strong>Email:</strong> whitewater@gmail.com.ng</p>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.7743089944134!2d-104.99025168459285!3d39.73923697944602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c78d78c1b3a0f%3A0x3e3c37c63c71126e!2sDenver%2C%20CO%2C%20USA!5e0!3m2!1sen!2sng!4v1616184177159!5m2!1sen!2sng" 
+        width="100%" height="300" allowfullscreen="" loading="lazy">
+      </iframe>
+    </section>
+
+    <section class="employees">
+      <h2>Meet Our Team</h2>
+      <div class="employee-gallery">
+        <figure>
+          <img src="images/profile.jpg" alt="Vimagh smiling">
+          <figcaption>Vimagh – Chief Operations Officer</figcaption>
+        </figure>
+        <figure>
+          <img src="images/profile.jpg" alt="Danladi smiling">
+          <figcaption>Danladi – CEO</figcaption>
+        </figure>
+        <figure>
+          <img src="images/profile.jpg" alt="Solomon smiling">
+          <figcaption>Solomon – Website Manager</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="submit-form.php" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <p>We are here to assist you:</p>
+        <label><input type="radio" name="purpose" value="general" required> General Inquiry</label><br>
+        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
+        <label><input type="radio" name="purpose" value="website"> Website Suggestion</label><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label><br><br>
+
+        <button type="submit">Submit Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Whitewater Rafting | Vimagh Solomon</p>
+    <nav class="socialmedia">
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+        <img src="images/instagram.png" alt="Instagram_handle">
+      </a>
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+        <img src="images/facebook.png" alt="Facebook_handle">
+      </a>
+      <a href="https://www.x.com/" target="_blank" rel="noopener">
+        <img src="images/twitter.png" alt="Twitter_handle">
+      </a>
+    </nav>
+  </footer>
+</body>
+</html>
