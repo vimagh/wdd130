@@ -1,21 +1,35 @@
-/* ===== Contact Page Styles ===== */
+/* ===== Contact Page Styles (Updated for Wireframe) ===== */
 
-/* Contact Info Section */
+:root {
+  --primary-color: #396CA0;        /* Blue */
+  --secondary-color: #FEFEFE;      /* White */
+  --accent1-color: #71563D;        /* Brown */
+  --accent2-color: #43555F;        /* Navy Blue */
+  --heading-font: "Roboto", sans-serif;
+  --body-font: "Montserrat", sans-serif;
+}
+
+/* Section Container Standard */
+section {
+  margin: 40px 0;
+  padding: 16px 0;
+}
+
+/* Contact Info */
 .contact-info {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 24px;
-  padding: 16px 0;
 }
 
 .contact-info div {
-  flex: 1 1 200px;
-  background-color: #f5f5f5;
+  flex: 1 1 250px;
+  background-color: #f9f9f9;
   padding: 16px;
   border-radius: 8px;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
 }
 
 .contact-info h3 {
@@ -30,27 +44,30 @@
   font-size: 0.95rem;
 }
 
-/* Map Styling */
+/* Embedded Map */
+.map-container {
+  margin-top: 24px;
+}
+
 .map-container iframe {
   width: 100%;
   height: 250px;
   border-radius: 8px;
   border: none;
-  margin-top: 16px;
 }
 
-/* Employee Profiles */
+/* Employee Profiles Section */
 .employee-profiles .profiles {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 24px;
   flex-wrap: wrap;
-  gap: 16px;
-  padding: 16px 0;
+  margin-top: 16px;
 }
 
 .employee-profiles figure {
   text-align: center;
-  max-width: 150px;
+  max-width: 160px;
 }
 
 .employee-profiles img {
@@ -67,18 +84,20 @@
   color: var(--accent2-color);
 }
 
-/* Contact Form */
+/* Contact Form Styles */
 .contact-form form {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding: 16px 0;
+  gap: 16px;
+  margin-top: 16px;
 }
 
 .contact-form label {
   font-weight: 600;
   font-family: var(--heading-font);
   color: var(--primary-color);
+  display: block;
+  margin-bottom: 4px;
 }
 
 .contact-form input,
@@ -89,14 +108,71 @@
   font-family: var(--body-font);
   font-size: 1rem;
   background-color: #fff;
+  width: 100%;
 }
 
 .contact-form textarea {
   resize: vertical;
+  min-height: 120px;
 }
 
+/* Grouping for Radio and Checkbox */
+.contact-form fieldset {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 12px;
+  background-color: #fafafa;
+}
 
-/* Footer Styling Enhancement */
+.contact-form legend {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 8px;
+}
+
+/* Align radio buttons horizontally */
+.contact-form .purpose-options {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+  margin-right: 8px;
+  accent-color: var(--primary-color);
+}
+
+/* Newsletter checkbox label */
+.contact-form .newsletter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  color: var(--accent1-color);
+}
+
+/* Submit Button */
+.contact-form button {
+  align-self: center;
+  padding: 12px 24px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: var(--accent2-color);
+}
+
+/* Footer Button and Link */
 footer {
   text-align: center;
   font-size: 0.9rem;
@@ -105,14 +181,8 @@ footer {
   color: var(--accent2-color);
 }
 
-.contact-form button {
-  align-self: start; /* Or use 'flex-start' for strict alignment */
-  margin-top: 8px;
-  padding: 10px 20px;
-  background-color: var(black);
-  color: black;
-  border: 1px solid black;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: 600;
+footer a {
+  color: var(--primary-color);
+  text-decoration: underline;
+  font-weight: 500;
 }

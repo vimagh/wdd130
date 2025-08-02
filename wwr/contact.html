@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us</title>
-  <link rel="stylesheet" href="styles/rafting.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Contacting Whitewater Rafting Company">
+  <meta name="author" content="Vimagh Solomon">
+  <title>Contact US - Whitewater Rafting</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -23,7 +28,7 @@
 
   <main>
     <section>
-      <h2>Contact Us</h2>
+      <h2>Contact Us Whitewater Rafting</h2>
       <div class="contact-info">
         <div>
           <h3>📍 Address</h3>
@@ -39,9 +44,10 @@
         </div>
       </div>
       <div class="map-container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126835.93035709773!2d7.323044020360885!3d9.057850015148516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b1d82a46e87%3A0x4f410f529d4f86f9!2sAbuja!5e0!3m2!1sen!2sng!4v1691079429466!5m2!1sen!2sng"
-          width="100%" height="250" allowfullscreen="" loading="lazy"></iframe>
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.7743089944134!2d-104.99025168459285!3d39.73923697944602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c78d78c1b3a0f%3A0x3e3c37c63c71126e!2sDenver%2C%20CO%2C%20USA!5e0!3m2!1sen!2sng!4v1616184177159!5m2!1sen!2sng" 
+        height="250" allowfullscreen="" loading="lazy" class="responsive-iframe">
+      </iframe>
       </div>
     </section>
 
@@ -63,21 +69,34 @@
       </div>
     </section>
 
-    <section class="contact-form">
-      <h2>Send Us a Message</h2>
-      <form action="submit_form.php" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
+<section class="contact-form">
+  <h2>Send Us a Message</h2>
+  <form action="submit_form.php" method="post">
+    
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required />
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required />
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+    <fieldset>
+      <legend>Purpose of the Message:</legend>
+      <label><input type="radio" name="purpose" value="General Inquiry" required /> General Inquiry</label><br />
+      <label><input type="radio" name="purpose" value="Reservation Question" /> Reservation Question</label><br />
+      <label><input type="radio" name="purpose" value="Website Suggestion" /> Website Suggestion</label>
+    </fieldset>
 
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <label>
+      <input type="checkbox" name="subscribe" />
+      Please subscribe me to the monthly newsletter
+    </label>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
   </main>
 
 <footer>
