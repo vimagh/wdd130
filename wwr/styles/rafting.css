@@ -59,6 +59,7 @@ section {
 /* Employee Profiles Section */
 .employee-profiles .profiles {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   gap: 24px;
   flex-wrap: wrap;
@@ -88,8 +89,8 @@ section {
 .contact-form form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  margin-top: 16px;
+  gap: 12px;
+  margin-top: 12px;
 }
 
 .contact-form label {
@@ -135,7 +136,7 @@ section {
 .contact-form .purpose-options {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 3px;
   margin-top: 8px;
 }
 
@@ -185,4 +186,167 @@ footer a {
   color: var(--primary-color);
   text-decoration: underline;
   font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FEFEFE;
+  font-size: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-family: var(--heading-font);
+}
+
+/* ===== Call To Action ===== */
+.cta {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #f2f7fb;
+}
+
+.cta-button {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: var(--accent2-color);
+}
+
+/* ===== Info Grid Section ===== */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.info-grid img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* ===== Newsletter Section ===== */
+.newsletter {
+  background-color: #eef6fb;
+  text-align: center;
+  padding: 2rem;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.newsletter-form button {
+  padding: 10px 24px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.newsletter-form button:hover {
+  background-color: var(--accent2-color);
+}
+
+/* ===== Trips Page Cards ===== */
+.trip-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.trip {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.trip img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.trip div {
+  padding: 1rem;
+}
+
+.trip h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+.trip ul {
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+/* ===== Trip Table ===== */
+.trip-table {
+  padding: 2rem;
+  background-color: #f7fafd;
+}
+
+.trip-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.trip-table th,
+.trip-table td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.trip-table th {
+  background-color: var(--primary-color);
+  color: #fff;
 }
